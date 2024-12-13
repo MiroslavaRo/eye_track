@@ -1,0 +1,43 @@
+:root {
+    --green: #97AF8F;
+    --gray: #E2E3EF;
+    --blue: #334551;
+    --yellow: #EEB858;
+}
+
+* {
+    font-family: "Manrope";
+}
+
+body {
+    font-size: 16px;
+}
+
+.text-sm {
+    font-size: 0.75rem;
+}
+
+
+.bg-green {
+    background-color: var(--green);
+}
+
+.text-green {
+    color: var(--green);
+}
+
+.border-green {
+    border-color: var(--green) !important;
+}
+
+.bg-gray {
+    background-color: var(--gray);
+}
+
+.bg-blue {
+    background-color: var(--blue);
+}
+
+.bg-yellow {
+    background-color: var(--yellow);
+}

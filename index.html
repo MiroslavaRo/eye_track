@@ -33,9 +33,12 @@
                         </li>
                     </ul>
                 </div>
-                <a class="btn bg-green text-white rounded-3 py-2 px-sm-5 px-3" href="#" data-bs-toggle="modal"
-                    data-bs-target="#loginModal"><i class="bi bi-person"></i>
-                    Login</a>
+                <!-- <a class="btn bg-green text-white rounded-3 py-2 px-sm-5 px-3" href="#" data-bs-toggle="modal"
+                    data-bs-target="#loginModal">
+                    Login</a> -->
+                <button type="button" class="btn bg-green text-white rounded-3 py-2 px-sm-5 px-3" data-bs-toggle="modal"
+                    data-bs-target="#loginModal" data-bs-whatever="@fat">Login</button>
+
             </div>
         </nav>
         <div class="container-fluid h-100">
@@ -181,7 +184,39 @@
 
         </section>
     </main>
-    <div id="footer"></div>
+
+    <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5 light-pink-text" style="font-family: 'Parkinsans';"
+                        id="loginModalLabel">
+                        Login
+                    </h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form>
+                        <div class="mb-3">
+                            <label for="user-name" class="col-form-label fw-bold">Username:</label>
+                            <input type="text" class="form-control border-pink" id="user-name">
+                        </div>
+                        <div class="mb-3">
+                            <label for="message-text" class="col-form-label fw-bold">Password:</label>
+                            <input type="password" class="form-control border-pink" id="user-password">
+
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary " data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-info">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
     <footer class="position-absolute w-100  text-center bg-blue text-green pt-4">
         <div class="container">
             <img src="imgs/Logo-green.svg" alt="logo" class="mb-4" style="width: 150px;">
@@ -220,5 +255,6 @@
         <p>&copy; 2024 Eye Track | Проектът е създаден учебния цел</p>
     </footer>
 </body>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>

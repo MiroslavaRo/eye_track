@@ -50,8 +50,6 @@ body {
 }
 
 
-/* ---- */
-
 .sidebar-column {
     padding-top: 92px;
 }
@@ -59,4 +57,15 @@ body {
 .sidebar-icon {
     width: 68px;
     height: 68px;
+}
+
+
+@media screen and (max-width: 768px) {
+    .orderm-2 {
+        order: 2;
+    }
+    
+    .orderm-3 {
+        order: 3;
+    }
 }

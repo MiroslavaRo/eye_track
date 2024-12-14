@@ -51,48 +51,89 @@
             </div>
         </div>
     </header>
-    <main>
+    <main class="d-flex flex-row pt-20">
+        <!-- Sidebar -->
+        <div class="col-md-1 bg-blue me-5">
+            <div class="d-flex flex-column align-items-center sidebar-column sticky-top">
+                <div class="rounded-circle border border-3 m-3">
+                    <img src="imgs/user.svg" alt=""
+                    class="p-2 sidebar-icon">
+                </div>
+                <div class="rounded-circle border border-3 m-3">
+                    <img src="imgs/tick.svg" alt=""
+                    class="p-2 sidebar-icon">
+                </div>
+                <div class="rounded-circle border border-3 m-3">
+                    <img src="imgs/museum.svg" alt=""
+                    class="p-2 sidebar-icon">
+                </div>
+                <div class="rounded-circle border border-3 m-3">
+                    <img src="imgs/users.svg" alt=""
+                    class="p-2 sidebar-icon">
+                </div>
+            </div>
+        </div>
         <div class="container">
-            <div class="row">
-                <!-- Sidebar -->
+            <div class="row me-4">
 
                 <!-- Main -->
                 <div class="col-md-10 main-content">
-                    <div class="d-flex align-items-center mb-4" style="margin-top:100px;">
-                        <img src="imgs/photo-1573497019418-b400bb3ab074.avif" width="100px" height="100px"
-                            alt="Profile Picture" class="rounded-circle  me-3">
+                    <div class="d-flex align-items-center mb-4 gap-3" style="margin-top:100px;">
+                        <div class="ratio ratio-1x1">
+                            <img src="imgs/photo-1573497019418-b400bb3ab074.avif"
+                            alt="Profile Picture" class="rounded-circle me-3 img-fluid">
+                        </div>
                         <div>
-                            <h4 class="mb-0">Петра Петкова<small class="text-muted">(Senior Manager)</small></h4>
-                            <p class="mb-0">petkova.p@mail.com</p>
+                            <div class="d-flex align-items-center">
+                                <h4 class="mb-0">Петра Петкова<small class="text-muted">(Senior Manager)</small></h4>
+                                <p class="mb-0">petkova.p@mail.com</p>
+                            </div>
+                            <div class="d-flex align-items-center flex-row"></div>
+                                <div>
+                                    <img>
+                                    <span>Design</span>
+                                </div>
+                                <div>
+                                    <img>
+                                    <span>Analytics</span>
+                                </div>
+                                <div>
+                                    <img>
+                                    <span>Development</span>
+                                </div>
+                            </div>
                         </div>
                     </div>
 
                     <section class="row mb-4 my-5">
-                        <div class="col-md-6">
+                        <div class="col-md-6 d-flex gap-3">
+                            <img src="" alt="">
                             <h3 class="department-card">Отдели</h3>
                         </div>
-                        <div class="col-md-6">
+                        <div class="col-md-6 d-flex gap-3">
+                            <img src="" alt="">
                             <h3 class="department-card">Служители</h3>
                         </div>
                     </section>
 
                     <!-- Tasks -->
                     <section>
-                        <h5><img src="imgs/tick-black.svg" width="40px" alt="tasks"> Tasks</h5>
-                        <div class="row mb-4">
-                            <div class="col-md-4 bg-white rounded p-3 shadow-sm" style="height: 150px;">
+                        <h3><img src="imgs/tick-black.svg" width="40px" alt="tasks"> Tasks</h3>
+                        <div class="row mb-4 gap-3">
+                            <div class="col-md-4 bg-white rounded p-3 shadow-sm" style="height: 120px;">
                                 <div class="task-card">
                                     <h5 class=" fw-bold">Задача #3 (Подготовка на дизайна във Figma)
                                     </h5><small>Дизайн</small>
                                 </div>
 
                             </div>
-                            <div class="col-md-4 bg-white rounded p-3 shadow-sm" style="height: 150px;">
+                            <div class="col-md-4 bg-white rounded p-3 shadow-sm" style="height: 120px;">
                                 <div class="task-card">
                                     <h5 class=" fw-bold">Създаване на банер</h5><small>Дизайн</small>
                                 </div>
                             </div>
-                            <div class="col-md-4 bg-white rounded p-3 shadow-sm" style="height: 150px;">
+                            <div class="col w-100"></div>
+                            <div class="col-md-4 bg-white rounded p-3 shadow-sm" style="height: 120px;">
                                 <div class="task-card">
                                     <h5 class=" fw-bold">React проект</h5>
                                     <small>Разработка</small>

@@ -1,5 +1,6 @@
 :root {
     --green: #97AF8F;
+    --dark-green: #6b7e63;
     --gray: #E2E3EF;
     --blue: #334551;
     --yellow: #EEB858;
@@ -11,6 +12,7 @@
 
 body {
     font-size: 16px;
+    background-color: #f8f9fa;
 }
 
 .text-sm {
@@ -20,6 +22,11 @@ body {
 
 .bg-green {
     background-color: var(--green);
+}
+
+.bg-green:hover,
+.bg-green:active {
+    background-color: var(--dark-green);
 }
 
 .text-green {
@@ -40,4 +47,46 @@ body {
 
 .bg-yellow {
     background-color: var(--yellow);
+}
+
+
+/* ---- */
+
+.sidebar {
+    background-color: #2c3e50;
+    min-height: 100vh;
+    padding-top: 20px;
+}
+
+.sidebar .nav-link {
+    color: white;
+    text-align: center;
+    margin: 20px 0;
+}
+
+.sidebar .nav-link:hover {
+    background-color: #34495e;
+    border-radius: 50%;
+}
+
+.sidebar .icon-circle {
+    width: 50px;
+    height: 50px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background-color: white;
+    color: #2c3e50;
+    font-size: 1.5rem;
+}
+
+.main-content {
+    padding: 20px;
+}
+
+.analytics-card {
+    background-color: #ffffff;
+    border-radius: 10px;
+    padding: 15px;
 }

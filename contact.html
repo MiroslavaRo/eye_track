@@ -14,8 +14,9 @@
 </head>
 
 <body class="">
-    <header class="fixed-top">
-        <nav class="bg-white shadow-sm navbar navbar-expand-lg navbar-white ">
+    <header class="">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-sm navbar navbar-expand-lg navbar-white fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="imgs/Logo.svg" alt="Logo"
                         style="width: 150px;" /></a>
@@ -38,22 +39,24 @@
 
             </div>
         </nav>
+        <!-- Banner -->
         <div class="container-fluid h-100">
             <div class="row h-100">
                 <div class="col-12">
-                    <div class="bg site-header">
-                        <div
-                            class="d-flex flex-column justify-content-center align-items-center h-100 text-center text-white">
-                            <h1 class="display-2 header-text"></h1>
+                    <div class="bg site-header-contact">
+                        <div class="d-flex flex-column justify-content-center 
+                                        align-items-center h-100 text-center  bg-white bg-opacity-75">
+                            <h1 class="display-2 header-text text-blue fw-bold">Свържете се с нас</h1>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <main style="margin:150px auto 100px;">
+    <main style="margin:100px auto 100px;">
         <div class="container ">
             <div class="row d-flex justify-content-evenly ">
+                <!-- Contact us -->
                 <section class="col-md-6 col-lg-4 mt-lg-0 orderm-3">
                     <h2 class="text-capitalize text-center mb-4">Споделете с нас!</h2>
                     <form>
@@ -85,7 +88,7 @@
                     <div class="border-bottom ">
                     </div>
                 </div>
-
+                <!-- Location -->
                 <section class="col-md-5 col-lg-4 mt-md-0">
                     <h2 class="text-capitalize text-center mb-4">Наша локация</h2>
 
@@ -121,6 +124,7 @@
 
         </div>
     </main>
+    <!-- Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -150,7 +154,7 @@
         </div>
     </div>
 
-
+    <!-- Footer -->
     <footer class="position-absolute w-100  text-center bg-blue text-green pt-4">
         <div class="container">
             <img src="imgs/Logo-green.svg" alt="logo" class="mb-4" style="width: 150px;">

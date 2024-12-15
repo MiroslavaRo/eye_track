@@ -14,8 +14,9 @@
 </head>
 
 <body class="">
-    <header class="fixed-top">
-        <nav class="bg-white shadow-sm navbar navbar-expand-lg navbar-white ">
+    <header class="">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-sm navbar navbar-expand-lg navbar-white fixed-top">
             <div class="container">
                 <a class="navbar-brand" href="index.html"><img src="imgs/Logo.svg" alt="Logo"
                         style="width: 150px;" /></a>
@@ -35,62 +36,77 @@
                 </div>
                 <button type="button" class="btn bg-green text-white rounded-3 py-2 px-sm-5 px-3" data-bs-toggle="modal"
                     data-bs-target="#loginModal">Логин</button>
-
             </div>
         </nav>
-        <div class="container-fluid h-100">
+        <!-- Banner -->
+        <div class="container-fluid ps-0  h-100">
             <div class="row h-100">
                 <div class="col-12">
                     <div class="bg site-header">
-                        <div
-                            class="d-flex flex-column justify-content-center align-items-center h-100 text-center text-white">
-                            <h1 class="display-2 header-text"></h1>
+                        <div class=" flex-column justify-content-center h-100 text-white d-none d-md-flex"
+                            style="width:25%; margin-left: 10%;">
+                            <h1 class="display-4 header-text  text-green">Имайте контрол</h1>
+                            <h6 class="text-green my-3 "> Планирайте работата си ефективно. Дайте възможност на себе си
+                                и
+                                на колегите си да изпълнявате задачите още по-бързо!
+                            </h6>
+                            <div class="my-4"><button type="button" class="btn bg-yellow  rounded-3  py-2 px-sm-5 px-3"
+                                    data-bs-toggle="modal" data-bs-target="#loginModal">Логин</button></div>
+
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </header>
-    <main class="" style="margin-top:200px;">
+    <main class="" style="margin-top:100px;">
+        <!-- Why to use -->
         <section class="container mt-5" style="margin-bottom: 100px;">
             <div class="row d-flex align-items-center">
                 <img src="imgs/hand.png" width="600"
                     class="img-fluid col col-lg-6 d-flex justify-content-center d-lg-auto" alt="hand thumbs up">
 
                 <div class="col col-lg-5 text-start">
-                    <h3 class="fw-bold capitalize mb-4">Why to use?</h3>
-                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque accusantium aperiam minima
-                        quibusdam enim ea voluptate saepe tenetur voluptas quisquam perferendis ducimus, assumenda culpa
-                        molestiae, inventore labore ab a adipisci? Lorem ipsum dolor sit amet consectetur adipisicing
-                        elit. Aliquid enim, deleniti sequi inventore fugiat non, quo incidunt quaerat eius vel quod
-                        voluptates a veritatis recusandae ea quasi earum aperiam! Cupiditate.</p>
+                    <h3 class="fw-bold capitalize mb-4">Защо да се използва?</h3>
+                    <p>Нашият инструмент помага на мениджърите да следят работата на екипа, като възлагат задачи на
+                        служителите. Задачите могат
+                        лесно да се преглеждат и променят.
+                        Дизайнът е интуитивен, но същевременно мощен. Точно това, което може да ви е необходимо за
+                        вашата компания.</p>
                     <div class="row mt-4">
                         <div class="col-3">
-                            <div class="rounded bg-green" style="width: 50px; height: 50px;">.</div>
+                            <div class="rounded bg-green p-1" style="width: 50px; height: 50px;"><img width="100%"
+                                    src="imgs/tick.svg" alt="Ефективност"></div>
+
                             <p class="mt-2 text-sm">Ефективност</p>
                         </div>
                         <div class="col-3">
-                            <div class="rounded bg-green" style="width: 50px; height: 50px;">.</div>
-                            <p class="mt-2 text-sm">Ефективност</p>
+                            <div class="rounded bg-green p-1" style="width: 50px; height: 50px;">
+                                <img width="100%" src="imgs/clock.svg" alt="Скорост">
+                            </div>
+                            <p class="mt-2 text-sm">Скорост</p>
                         </div>
                         <div class="col-3">
-                            <div class="rounded bg-green" style="width: 50px; height: 50px;">.</div>
-                            <p class="mt-2 text-sm">Ефективност</p>
+                            <div class="rounded bg-green p-1" style="width: 50px; height: 50px;">
+                                <img width="100%" src="imgs/smile.svg" alt="Лесност">
+                            </div>
+                            <p class="mt-2 text-sm">Лесност</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+        <!-- How to use -->
         <section class="container my-5" style="margin: 200px auto;">
             <div class="col col-md-8 text-center mx-auto mb-5">
-                <h3 class="fw-bold capitalize mb-4">How it works?</h3>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Cumque accusantium aperiam minima
-                    quibusdam enim ea voluptate saepe tenetur voluptas quisquam perferendis ducimus, assumenda culpa
-                    molestiae, inventore labore ab a adipisci.</p>
+                <h3 class="fw-bold capitalize mb-4">Как работи?</h3>
+                <p>Методологията Kanban е лесна за използване и може идеално да пасне на вашата компания. Разполагате с
+                    три етапа на
+                    работния процес: To-Do, в процес на изпълнение, свършена работа. Когато приключите с възложената ви
+                    задача, просто я
+                    преместете в друг раздел.</p>
             </div>
             <div class="my-5 pb-lg-5  row justify-content-center position-relative">
-                <!-- <div class="position-absolute"><img src="imgs/arrow.svg" width="250" class=" img-fluid" alt="arrow">
-                </div> -->
 
                 <img src="imgs/sec-gray.png" width="300px" class="col-3 img-fluid" alt="To-Do section">
                 <img src="imgs/sec-yellow.png" class="col-3 img-fluid" width="300px" alt="To-Do section">
@@ -100,20 +116,16 @@
             <div class="my-5 border-bottom ">
             </div>
         </section>
+        <!-- Testemonials -->
         <section class="container " style="margin-bottom: 150px;">
-            <h3 class="fw-bold capitalize mb-4 text-start">What our clients think</h3>
+            <h3 class="fw-bold capitalize mb-4 text-start">Какво мислят нашите клиенти</h3>
 
             <div class="row gap-4 px-2 justify-content-center justify-content-sm-start">
                 <div class="card shadow-sm border-0 col-12 col-md-5">
                     <div class="card-body py-4">
-                        <h6 class="card-subtitle mb-3 text-body-secondary">Jhone Doe</h6>
-                        <h4 class="card-title mb-3 fw-bolder">Good service</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make
-                                up
-                                the bulk
-                                of
-                                the card's
-                                content.</p>
+                        <h6 class="card-subtitle mb-3 text-body-secondary">Иван Иванов</h6>
+                        <h4 class="card-title mb-3 fw-bolder">Чудесен сервис</h5>
+                            <p class="card-text"></p>
                             <div class="d-flex flex-row gap-2">
                                 <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
                                 </div>
@@ -130,26 +142,22 @@
                 </div>
                 <div class="card shadow-sm border-0 col-12  col col-md-5">
                     <div class="card-body py-4">
-                        <h6 class="card-subtitle mb-3 text-body-secondary">Jhone Doe</h6>
-                        <h4 class="card-title mb-3 fw-bolder">Good service</h5>
-                            <p class="card-text">Some quick example text to build on the card title and make
-                                up
-                                the bulk
-                                of
-                                the card's
-                                content.</p>
-                            <div class="d-flex flex-row gap-2">
-                                <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                                </div>
-                                <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                                </div>
-                                <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                                </div>
-                                <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                                </div>
-                                <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                                </div>
+                        <h6 class="card-subtitle mb-3 text-body-secondary">Александер Грин</h6>
+                        <h4 class="card-title mb-3 fw-bolder">Препоръчвам го!</h4>
+                        <p class="card-text">
+                            Лесен и бърз за използване.</p>
+                        <div class="d-flex flex-row gap-2">
+                            <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
                             </div>
+                            <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
+                            </div>
+                            <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
+                            </div>
+                            <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
+                            </div>
+                            <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
+                            </div>
+                        </div>
                     </div>
                 </div>
 
@@ -162,6 +170,7 @@
         </section>
     </main>
 
+    <!-- Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -191,7 +200,7 @@
         </div>
     </div>
 
-
+    <!-- Footer -->
     <footer class="position-absolute w-100  text-center bg-blue text-green pt-4">
         <div class="container">
             <img src="imgs/Logo-green.svg" alt="logo" class="mb-4" style="width: 150px;">

@@ -14,6 +14,7 @@
 </head>
 
 <body class="">
+    <!-- Navigation -->
     <header class="fixed-top">
         <nav class="bg-white shadow-sm navbar navbar-expand-lg navbar-white ">
             <div class="container">
@@ -38,81 +39,128 @@
 
             </div>
         </nav>
-        <div class="container-fluid h-100">
-            <div class="row h-100">
-                <div class="col-12">
-                    <div class="bg site-header">
-                        <div
-                            class="d-flex flex-column justify-content-center align-items-center h-100 text-center text-white">
-                            <h1 class="display-2 header-text"></h1>
-                        </div>
-                    </div>
+    </header>
+    <main class="d-flex flex-row pt-20">
+        <!-- Sidebar -->
+        <div class="col-md-1 bg-blue me-5">
+            <div class="d-flex flex-column align-items-center sidebar-column sticky-top">
+                <div class="rounded-circle border border-3 m-3">
+                    <img src="imgs/user.svg" alt="" class="p-2 sidebar-icon">
+                </div>
+                <div class="rounded-circle border border-3 m-3">
+                    <img src="imgs/tick.svg" alt="" class="p-2 sidebar-icon">
+                </div>
+                <div class="rounded-circle border border-3 m-3">
+                    <img src="imgs/museum.svg" alt="" class="p-2 sidebar-icon">
+                </div>
+                <div class="rounded-circle border border-3 m-3">
+                    <img src="imgs/users.svg" alt="" class="p-2 sidebar-icon">
                 </div>
             </div>
         </div>
-    </header>
-    <main>
         <div class="container">
-            <div class="row">
-                <!-- Sidebar -->
-
-                <!-- Main -->
+            <div class="row me-4">
                 <div class="col-md-10 main-content">
-                    <div class="d-flex align-items-center mb-4" style="margin-top:100px;">
-                        <img src="imgs/photo-1573497019418-b400bb3ab074.avif" width="100px" height="100px"
-                            alt="Profile Picture" class="rounded-circle  me-3">
-                        <div>
-                            <h4 class="mb-0">Петра Петкова<small class="text-muted">(Senior Manager)</small></h4>
-                            <p class="mb-0">petkova.p@mail.com</p>
-                        </div>
-                    </div>
 
+                    <!-- User -->
+                    <section class="row mb-5 gap-3" style="margin-top:140px;">
+                        <!-- <div class="col ratio ratio-1x1">
+                            <img src="imgs/photo-1573497019418-b400bb3ab074.avif" alt="Profile Picture"
+                                class="rounded-circle img-fluid">
+                        </div> -->
+                        <div class="row">
+                            <div class="col gap-3 mb-5">
+                                <div class="d-flex align-items-baseline gap-3">
+                                    <h3 class="fw-bold">Петра Петкова</h3>
+                                    <h4 class="text-muted">(Senior Manager)</h4>
+                                </div>
+                                <p class="text-muted">petkova.p@mail.com</p>
+                            </div>
+                            <div class="d-flex gap-5">
+                                <a href="#"
+                                    class="d-flex gap-3 flex-column align-items-center  link-dark link-underline-opacity-0">
+                                    <img src="imgs/brush.svg" alt="Дизайн" width="70px" height="70px"
+                                        class="rounded rounded-3 bg-green p-3">
+                                    <span class="link-dark">Дизайн</span>
+                                </a>
+                                <a href="#"
+                                    class="d-flex gap-3 flex-column align-items-center link-dark link-underline-opacity-0">
+                                    <img src="imgs/search.svg" alt="Аналитика" width="70px" height="70px"
+                                        class="rounded rounded-3 bg-green p-3">
+                                    <span class="link-dark">Аналитика</span>
+                                </a>
+                                <a href="#"
+                                    class="d-flex gap-3 flex-column align-items-center  link-dark link-underline-opacity-0">
+                                    <img src="imgs/code.svg" alt="Разработка" width="70px" height="70px"
+                                        class="rounded rounded-3 bg-green p-3  link-underline-opacity-0">
+                                    <span class="link-dark">Разработка</span>
+                                </a>
+                            </div>
+                        </div>
+                    </section>
+                    <!-- Departments & Employees -->
                     <section class="row mb-4 my-5">
                         <div class="col-md-6">
-                            <h3 class="department-card"><a href="#"
-                                    class="d-flex link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2"><img
-                                        src="imgs/museum-dark.svg" width="30px" class="me-2" alt="department">Отдели</a>
+                            <h3 class="department-card d-flex align-items-baseline gap-2">
+                                <a href="#"
+                                    class="d-flex link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2">
+                                    <img src="imgs/museum-dark.svg" width="30px" class="me-2" alt="department">
+                                    <span>Отдели</span>
+                                </a>
+                                <a href="#">
+                                    <img src="imgs/plus-dark.svg" width="30px" alt="">
+                                </a>
                             </h3>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="department-card"><a href="#"
+                            <h3 class="department-card gap-2">
+                                <a href="#"
                                     class="d-flex link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2">
-                                    <img src="imgs/users-dark.svg" class="me-2" width="25px"
-                                        alt="emplyees">Служители</a>
+                                    <img src="imgs/users-dark.svg" class="me-2" width="25px" alt="emplyees">
+                                    <span>Служители</span>
+                                </a>
+                                <a href="#">
+                                    <img src="imgs/plus-dark.svg" width="30px" alt="">
+                                </a>
                             </h3>
                         </div>
                     </section>
-
+                    <!-- Tasks -->
                     <section>
                         <h3><a href="#"
                                 class="link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2">
                                 <img src="imgs/tick-black.svg" width="45px" alt="tasks"> Задачи</a></h3>
-                        <div class="row mb-4">
-                            <div class="col-md-4 bg-white rounded p-3 shadow-sm" style="height: 150px;">
-                                <div class="task-card">
+                        <div class="row mb-4 gap-3">
+                            <div class="col-md-5 bg-white rounded p-3 shadow-sm" style="height: 120px;">
+                                <a href="#" class="task-card link-dark link-underline-opacity-0">
                                     <h5 class=" fw-bold">Задача #3 (Подготовка на дизайна във Figma)
                                     </h5><small>Дизайн</small>
-                                </div>
+                                </a>
 
                             </div>
-                            <div class="col-md-4 bg-white rounded p-3 shadow-sm" style="height: 150px;">
-                                <div class="task-card">
+                            <div class="col-md-5 bg-white rounded p-3 shadow-sm" style="height: 120px;">
+                                <a href="#" class="task-card link-dark link-underline-opacity-0">
                                     <h5 class=" fw-bold">Създаване на банер</h5><small>Дизайн</small>
-                                </div>
+                                </a>
                             </div>
-                            <div class="col-md-4 bg-white rounded p-3 shadow-sm" style="height: 150px;">
-                                <div class="task-card">
+                            <div class="col-md-5 bg-white rounded p-3 shadow-sm" style="height: 120px;">
+                                <a href="#" class="task-card link-dark link-underline-opacity-0">
                                     <h5 class=" fw-bold">React проект</h5>
                                     <small>Разработка</small>
-                                </div>
+                                </a>
                             </div>
                         </div>
                         <div class="my-5 border-bottom ">
                     </section>
-
+                    <!-- Analytics -->
                     <section>
-                        <h3>Анализ</h3>
-                        <div class="row mb-4">
+                        <div class="d-flex justify-content-between mb-4">
+                            <h3>Аналитика</h3>
+                            <div id="test" class="analytics-eye cursor-pointer">
+                                <img src="imgs/eye.svg" width="30px" alt="">
+                            </div>
+                        </div>
+                        <div class="row mb-4 analytics">
                             <div class="col-md-6">
                                 <div class="analytics-card w-50 rounded p-2 bg-white">
                                     <canvas id="pieChart"></canvas>
@@ -134,6 +182,7 @@
         </div>
 
     </main>
+    <!-- Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
@@ -163,7 +212,7 @@
         </div>
     </div>
 
-
+    <!-- Footer -->
     <footer class="position-absolute w-100  text-center bg-blue text-green pt-4">
         <div class="container">
             <img src="imgs/Logo-green.svg" alt="logo" class="mb-4" style="width: 150px;">

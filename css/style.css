@@ -1,3 +1,7 @@
+* {
+    font-family: "Manrope";
+}
+
 :root {
     --green: #97AF8F;
     --dark-green: #6b7e63;
@@ -5,10 +9,6 @@
     --blue: #334551;
     --yellow: #EEB858;
     --dark-yellow: #d3a24c;
-}
-
-* {
-    font-family: "Manrope";
 }
 
 body {
@@ -62,6 +62,29 @@ body {
 
 }
 
+/* ---- header --- */
+.navbar-brand img {
+    width: 150px;
+}
+
+.site-header .text {
+    padding-bottom: 6%;
+}
+
+.inner p {
+    font-size: 18px;
+
+}
+
+.sidebar-column {
+    padding-top: 92px;
+}
+
+.sidebar-icon {
+    width: 45px;
+    height: 45px;
+}
+
 .site-header {
     background-image: url('../imgs/banner.png');
     background-size: cover;
@@ -77,6 +100,62 @@ body {
     height: 40vh;
 }
 
+/* -----  ---- */
+.why-icon {
+    width: 50px;
+    height: 50px;
+}
+
+.star {
+    width: 30px;
+    height: 30px;
+}
+
+.socials {
+    width: 25px;
+    height: 25px;
+}
+
+.contacts {
+    width: 20px;
+    height: 20px;
+}
+
+/* --- profile --- */
+
+.info-departments img {
+    width: 50px;
+    height: 50px;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    max-width: 250px;
+    object-fit: cover;
+}
+
+.edit {
+    width: 40px;
+    height: 40px;
+    rotate: 30deg;
+
+}
+
+.plus {
+    width: 20px;
+    height: 20px;
+
+}
+
+.side-icon,
+.analytics-eye img {
+    width: 30px;
+    height: 30px;
+}
+
+
+/* --- media queries --- */
 @media screen and (max-width: 768px) {
     .orderm-2 {
         order: 2;
@@ -89,4 +168,29 @@ body {
     .site-header {
         background-image: url('../imgs/banner-pic.png');
     }
+
+    .inner {
+        background: var(--blue);
+        width: 80%;
+
+    }
+
+    .inner p {
+        font-size: 14px;
+
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+    .profile-pic {
+        height: 230px;
+        width: 230px;
+
+    }
+
+    .text-smaller {
+        font-size: 14px;
+    }
+
 }

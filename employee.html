@@ -11,26 +11,26 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/eye.ico">
 </head>
 
 <body class="">
-    <!-- Navigation -->
     <header class="fixed-top">
-        <nav class="bg-white shadow-sm navbar navbar-expand-lg navbar-white ">
+        <!-- Navigation -->
+        <nav class="bg-white shadow-sm navbar navbar-expand-lg navbar-white fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="imgs/Logo.svg" alt="Logo"
-                        style="width: 150px;" /></a>
+                <a class="navbar-brand" href="index.html"><img src="imgs/Logo.svg" alt="Logo" style="width: 150px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse me-5" id="navbarNav">
-                    <ul class="navbar-nav ms-auto gap-4 ">
+                    <ul class="navbar-nav ms-auto gap-lg-4 ">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Начало</a>
+                            <a class="nav-link" href="index.html">Начало</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Контакти</a>
+                            <a class="nav-link active" href="contact.html">Контакти</a>
                         </li>
                     </ul>
                 </div>
@@ -42,122 +42,179 @@
     </header>
     <main class="d-flex flex-row pt-20">
         <!-- Sidebar -->
-        <div class="col-md-1 bg-blue me-5">
-            <div class="d-flex flex-column align-items-center sidebar-column sticky-top">
-                <div class="rounded-circle border border-3 m-3">
+        <div class="d-none d-sm-block bg-blue me-5">
+            <div class="d-none d-sm-flex flex-column align-items-center sidebar-column sticky-top">
+                <a href="#" class="rounded-circle border border-3 m-3">
                     <img src="imgs/user.svg" alt="" class="p-2 sidebar-icon">
-                </div>
-                <div class="rounded-circle border border-3 m-3">
+                </a>
+                <a href="#" class="rounded-circle border border-3 m-3">
                     <img src="imgs/tick.svg" alt="" class="p-2 sidebar-icon">
-                </div>
-                <div class="rounded-circle border border-3 m-3">
+                </a>
+                <a href="#" class="rounded-circle border border-3 m-3">
                     <img src="imgs/museum.svg" alt="" class="p-2 sidebar-icon">
-                </div>
-                <div class="rounded-circle border border-3 m-3">
+                </a>
+                <a href="#" class="rounded-circle border border-3 m-3">
                     <img src="imgs/users.svg" alt="" class="p-2 sidebar-icon">
-                </div>
+                </a>
             </div>
         </div>
         <div class="container">
-            <div class="row me-4">
-                <div class="col-md-10 main-content">
+            <div class="row ">
+                <div class="col-md-10 main-content w-100">
 
                     <!-- User -->
-                    <section class="row mb-5 gap-3" style="margin-top:140px;">
-                        <!-- <div class="col ratio ratio-1x1">
-                            <img src="imgs/photo-1573497019418-b400bb3ab074.avif" alt="Profile Picture"
-                                class="rounded-circle img-fluid">
-                        </div> -->
-                        <div class="row">
-                            <div class="col gap-3 mb-5">
-                                <div class="d-flex align-items-baseline gap-3">
+                    <section class="row mb-5 " style="margin-top:140px;">
+                        <div class="col-sm-5 col-md-3 mb-3 mb-md-0 d-flex justify-content-center">
+                            <img src="imgs/petra.png" alt="Profile Picture"
+                                class="rounded-circle img-fluid  profile-pic">
+                        </div>
+                        <div class="row col">
+                            <button class="col-1 d-sm-none border-0 bg-transparent d-flex align-items-start"
+                                data-bs-toggle="modal" data-bs-target="#editModal">
+                                <img src="imgs/pencil.svg" alt="Дизайн" class="edit">
+                            </button>
+                            <div class="col  gap-0 gap-md-3 d-flex flex-column align-items-center align-items-sm-start">
+                                <div class="d-flex flex-column flex-md-row align-items-baseline gap-1 gap-md-3">
                                     <h3 class="fw-bold">Петра Петкова</h3>
                                     <h4 class="text-muted">(Senior Manager)</h4>
                                 </div>
                                 <p class="text-muted">petkova.p@mail.com</p>
                             </div>
-                            <div class="d-flex gap-5">
+                            <div
+                                class="d-flex gap-1 gap-md-5 info-departments d-flex justify-content-evenly justify-content-sm-start">
                                 <a href="#"
-                                    class="d-flex gap-3 flex-column align-items-center  link-dark link-underline-opacity-0">
-                                    <img src="imgs/brush.svg" alt="Дизайн" width="70px" height="70px"
-                                        class="rounded rounded-3 bg-green p-3">
-                                    <span class="link-dark">Дизайн</span>
+                                    class="d-flex gap-3 flex-column align-items-center link-dark link-underline-opacity-0 text-sm ">
+                                    <img src="imgs/brush.svg" alt="Дизайн" class="rounded rounded-3 bg-green p-3">
+                                    <span class="link-dark ">Дизайн</span>
                                 </a>
                                 <a href="#"
-                                    class="d-flex gap-3 flex-column align-items-center link-dark link-underline-opacity-0">
-                                    <img src="imgs/search.svg" alt="Аналитика" width="70px" height="70px"
-                                        class="rounded rounded-3 bg-green p-3">
-                                    <span class="link-dark">Аналитика</span>
+                                    class="d-flex gap-3 flex-column align-items-center link-dark link-underline-opacity-0 text-sm ">
+                                    <img src="imgs/search.svg" alt="Анализи" class="rounded rounded-3 bg-green p-3">
+                                    <span class="link-dark ">Анализи</span>
                                 </a>
                                 <a href="#"
-                                    class="d-flex gap-3 flex-column align-items-center  link-dark link-underline-opacity-0">
-                                    <img src="imgs/code.svg" alt="Разработка" width="70px" height="70px"
+                                    class="d-flex gap-3 flex-column align-items-center  link-dark link-underline-opacity-0 text-sm ">
+                                    <img src="imgs/code.svg" alt="Разработки"
                                         class="rounded rounded-3 bg-green p-3  link-underline-opacity-0">
-                                    <span class="link-dark">Разработка</span>
+                                    <span class="link-dark ">Разработки</span>
                                 </a>
                             </div>
                         </div>
+                        <button class="col-1 d-none border-0 bg-transparent d-sm-flex align-items-start"
+                            data-bs-toggle="modal" data-bs-target="#editModal">
+                            <img src="imgs/pencil.svg" alt="Дизайн" class="edit">
+                        </button>
                     </section>
+                    <!-- Edit Modal -->
+                    <div class="modal modal-lg fade" id="editModal" tabindex="-1" aria-labelledby="editModalLabelLabel"
+                        aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-header">
+                                    <h3 class="modal-title mx-auto" id="editModalLabelLabel">
+                                        Редактиране на профила
+                                    </h3>
+                                    <button type="button" class="btn-close m-0" data-bs-dismiss="modal"
+                                        aria-label="Close"></button>
+                                </div>
+                                <div class="modal-body">
+                                    <form>
+                                        <div class="row">
+                                            <div
+                                                class="col-md-5 mb-3 mb-md-0 d-flex flex-column justify-content-center align-items-center">
+                                                <img src="imgs/petra.png" alt="profile picture"
+                                                    class="profile-pic rounded-circle mb-3">
+                                                <input class="form-control" type="file" id="formFile">
+                                            </div>
+                                            <div class="col">
+                                                <div class="mb-3">
+                                                    <label for="profile-name" class="col-form-label">Имена:</label>
+                                                    <input type="text" class="form-control border-green"
+                                                        id="profile-name" value="Петра Петкова">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="profile-position"
+                                                        class="col-form-label">Позиция:</label>
+                                                    <input type="text" class="form-control border-green"
+                                                        id="profile-position" value="Senior Manager">
+                                                </div>
+                                                <div class="mb-3">
+                                                    <label for="profile-email" class="col-form-label">Email:</label>
+                                                    <input type="text" class="form-control border-green"
+                                                        id="profile-email" value="petkova.p@mail.com">
+                                                </div>
+                                            </div>
+                                        </div>
+
+                                    </form>
+                                </div>
+                                <div class="modal-footer ">
+                                    <button type="submit" class="btn bg-green text-white col col-md-2">Запази</button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
                     <!-- Departments & Employees -->
-                    <section class="row mb-4 my-5">
+                    <section class="row mb-3 mt-5 gap-3 gap-md-0">
                         <div class="col-md-6">
-                            <h3 class="department-card d-flex align-items-baseline gap-2">
+                            <h3 class="department-card d-flex align-items-center gap-2">
                                 <a href="#"
-                                    class="d-flex link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2">
-                                    <img src="imgs/museum-dark.svg" width="30px" class="me-2" alt="department">
+                                    class="d-flex align-items-center link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2">
+                                    <img src="imgs/museum-dark.svg" class="me-2 side-icon" alt="department">
                                     <span>Отдели</span>
-                                </a>
-                                <a href="#">
-                                    <img src="imgs/plus-dark.svg" width="30px" alt="">
+                                    <img src="imgs/plus-dark.svg" class="ms-2 plus" alt="">
                                 </a>
                             </h3>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="department-card gap-2">
+                            <h3 class="department-card gap-2 d-flex align-items-center ">
                                 <a href="#"
-                                    class="d-flex link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2">
-                                    <img src="imgs/users-dark.svg" class="me-2" width="25px" alt="emplyees">
-                                    <span>Служители</span>
-                                </a>
-                                <a href="#">
-                                    <img src="imgs/plus-dark.svg" width="30px" alt="">
+                                    class="d-flex align-items-center link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2">
+                                    <img src="imgs/users-dark.svg" class="me-2 side-icon" alt="emplyees">
+                                    <span>Служители</span><img src="imgs/plus-dark.svg" class="ms-2 plus" alt="">
                                 </a>
                             </h3>
                         </div>
                     </section>
+
                     <!-- Tasks -->
-                    <section>
+                    <section class="tasks">
                         <h3><a href="#"
-                                class="link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2">
-                                <img src="imgs/tick-black.svg" width="45px" alt="tasks"> Задачи</a></h3>
+                                class=" align-items-center link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2">
+                                <img src="imgs/tick-black.svg" class=" side-icon" alt="tasks">
+                                <span>Задачи</span>
+                                <img src="imgs/plus-dark.svg" class="ms-2 plus" alt=""></a></h3>
                         <div class="row mb-4 gap-3">
-                            <div class="col-md-5 bg-white rounded p-3 shadow-sm" style="height: 120px;">
+                            <div class="col-md-5 bg-white rounded p-3 shadow-sm">
                                 <a href="#" class="task-card link-dark link-underline-opacity-0">
                                     <h5 class=" fw-bold">Задача #3 (Подготовка на дизайна във Figma)
                                     </h5><small>Дизайн</small>
                                 </a>
 
                             </div>
-                            <div class="col-md-5 bg-white rounded p-3 shadow-sm" style="height: 120px;">
+                            <div class="col-md-5 bg-white rounded p-3 shadow-sm">
                                 <a href="#" class="task-card link-dark link-underline-opacity-0">
                                     <h5 class=" fw-bold">Създаване на банер</h5><small>Дизайн</small>
                                 </a>
                             </div>
-                            <div class="col-md-5 bg-white rounded p-3 shadow-sm" style="height: 120px;">
+                            <div class="col-md-5 bg-white rounded p-3 shadow-sm hm">
                                 <a href="#" class="task-card link-dark link-underline-opacity-0">
                                     <h5 class=" fw-bold">React проект</h5>
-                                    <small>Разработка</small>
+                                    <small>Разработки</small>
                                 </a>
                             </div>
                         </div>
-                        <div class="my-5 border-bottom ">
                     </section>
+
+                    <div class="my-5 border-bottom "></div>
+
                     <!-- Analytics -->
                     <section>
                         <div class="d-flex justify-content-between mb-4">
-                            <h3>Аналитика</h3>
-                            <div id="test" class="analytics-eye cursor-pointer">
-                                <img src="imgs/eye.svg" width="30px" alt="">
+                            <h3>Анализи</h3>
+                            <div class="analytics-eye cursor-pointer">
+                                <img src="imgs/eye.svg" alt="" id="eye-1">
                             </div>
                         </div>
                         <div class="row mb-4 analytics">
@@ -182,13 +239,14 @@
         </div>
 
     </main>
+
     <!-- Modal -->
     <div class="modal fade" id="loginModal" tabindex="-1" aria-labelledby="loginModalLabel" aria-hidden="true">
         <div class="modal-dialog">
             <div class="modal-content">
                 <div class="modal-header">
                     <h3 class="modal-title mx-auto" id="loginModalLabel">
-                        Login
+                        Логин
                     </h3>
                     <button type="button" class="btn-close m-0" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
@@ -196,17 +254,17 @@
                     <form>
                         <div class="mb-3">
                             <label for="user-name" class="col-form-label ">Потребителско име:</label>
-                            <input type="text" class="form-control border-pink" id="user-name">
+                            <input type="text" class="form-control " id="user-name">
                         </div>
                         <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Парола:</label>
-                            <input type="password" class="form-control border-pink" id="user-password">
+                            <label for="user-password" class="col-form-label">Парола:</label>
+                            <input type="password" class="form-control " id="user-password">
 
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <a href="employee.html" type="button" class="btn bg-green text-white px-4">Логин</a>
+                    <a href="employee.html" class="btn bg-green text-white px-4">Логин</a>
                 </div>
             </div>
         </div>
@@ -218,32 +276,34 @@
             <img src="imgs/Logo-green.svg" alt="logo" class="mb-4" style="width: 150px;">
             <div class="w-50 mx-auto mb-4">
                 <p class="text-sm">
-                    Eye Track стартираща компания, която помага на екипа да работи ефективно, като използва метода
+                    Eye Track е стартираща компания, която помага на екипа да работи ефективно, като използва метода
                     kanban. Проследяването на
-                    задачите помага на всички служители и мениджъри да контролират работата си.
+                    задачите помага на всички служители и мениджъри да имат по-голям контрол върху работата си.
                 </p>
             </div>
             <ul class="w-75 mx-auto mb-4 navbar-nav  d-flex flex-lg-row justify-content-evenly">
-                <li class="nav-item "><img src="imgs/phone.svg" width="20" class="me-2">+00000000
+                <li class="nav-item "><img src="imgs/phone.svg" class="me-2 contacts" alt="phone">+00000000
                 </li>
-                <li class="nav-item "><img src="imgs/email.svg" width="20" class="me-2">email@mail.com
+                <li class="nav-item "><img src="imgs/email.svg" class="me-2 contacts" alt="email">email@mail.com
                 </li>
-                <li class="nav-item "><img src="imgs/address.svg" width="20" class="me-2">Варна, Младост, ж.к. Младост
+                <li class="nav-item "><img src="imgs/address.svg" class="me-2 contacts" alt="address">Варна, Младост,
+                    ж.к.
+                    Младост
                     бл. 144
                 </li>
             </ul>
             <ul class="w-50 mx-auto mb-2 navbar-nav  d-flex flex-row justify-content-center gap-3">
                 <li class="nav-item rounded-circle bg-yellow ">
-                    <a class="nav-link p-2" href="instagram.com"><img src="imgs/instagram-logo.svg"
-                            style="width: 25px; " alt="instagram"></a>
+                    <a class="nav-link p-2" href="instagram.com"><img src="imgs/instagram-logo.svg" alt=" instagram"
+                            class="socials"></a>
                 </li>
                 <li class="nav-item rounded-circle bg-yellow">
-                    <a class="nav-link p-2" href="facebook.com"><img src="imgs/facebook-logo.svg" style="width: 25px;"
-                            alt="facebook"></a>
+                    <a class="nav-link p-2" href="facebook.com"><img src="imgs/facebook-logo.svg" alt="facebook"
+                            class="socials"></a>
                 </li>
                 <li class="nav-item rounded-circle bg-yellow">
-                    <a class="nav-link p-2 " href="bluesky.com"><img src="imgs/Bluesky_Logo.svg" style="width: 25px;"
-                            alt="bluesky"></a>
+                    <a class="nav-link p-2 " href="bluesky.com"><img src="imgs/Bluesky_Logo.svg" alt="bluesky"
+                            class="socials"></a>
                 </li>
             </ul>
 
@@ -251,10 +311,11 @@
         <hr>
         <p>&copy; 2024 Eye Track | Проектът е създаден учебния цел</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script src="js/script.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
-<script src="js/script.js"></script>
 
 </html>

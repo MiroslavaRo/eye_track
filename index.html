@@ -11,47 +11,52 @@
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
         integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="icon" type="image/x-icon" href="imgs/eye.ico">
 </head>
 
 <body class="">
-    <header class="">
+    <header class=" ">
         <!-- Navigation -->
         <nav class="bg-white shadow-sm navbar navbar-expand-lg navbar-white fixed-top">
             <div class="container">
-                <a class="navbar-brand" href="index.html"><img src="imgs/Logo.svg" alt="Logo"
-                        style="width: 150px;" /></a>
+                <a class="navbar-brand" href="index.html"><img src="imgs/Logo.svg" alt="Logo" style="width: 150px;"></a>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon"></span>
                 </button>
                 <div class="collapse navbar-collapse me-5" id="navbarNav">
-                    <ul class="navbar-nav ms-auto gap-4 ">
+                    <ul class="navbar-nav ms-auto gap-lg-4 ">
                         <li class="nav-item">
-                            <a class="nav-link active" href="index.html">Начало</a>
+                            <a class="nav-link" href="index.html">Начало</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link" href="contact.html">Контакти</a>
+                            <a class="nav-link active" href="contact.html">Контакти</a>
                         </li>
                     </ul>
                 </div>
                 <button type="button" class="btn bg-green text-white rounded-3 py-2 px-sm-5 px-3" data-bs-toggle="modal"
                     data-bs-target="#loginModal">Логин</button>
+
             </div>
         </nav>
+
         <!-- Banner -->
         <div class="container-fluid ps-0  h-100">
             <div class="row h-100">
-                <div class="col-12">
-                    <div class="bg site-header">
-                        <div class=" flex-column justify-content-center h-100 text-white d-none d-md-flex"
-                            style="width:25%; margin-left: 10%;">
-                            <h1 class="display-4 header-text  text-green">Имайте контрол</h1>
-                            <h6 class="text-green my-3 "> Планирайте работата си ефективно. Дайте възможност на себе си
-                                и
-                                на колегите си да изпълнявате задачите още по-бързо!
-                            </h6>
-                            <div class="my-4"><button type="button" class="btn bg-yellow  rounded-3  py-2 px-sm-5 px-3"
-                                    data-bs-toggle="modal" data-bs-target="#loginModal">Логин</button></div>
+                <div class="col-12 ">
+                    <div class="site-header">
+                        <div class="text d-flex justify-content-end align-items-center text-center ms-md-5
+                        flex-column justify-content-md-center align-items-md-start text-md-start h-100 text-white">
+                            <div class="inner p-4 p-md-0 rounded col-md-4">
+                                <h1 class="display-3 header-text fw-bold text-green">Поемете контрол</h1>
+                                <p class="text-green mt-4 "> Планирайте работата си ефективно. Дайте
+                                    възможност на себе
+                                    си
+                                    и
+                                    на колегите си да изпълнявате задачите още по-бързо!
+                                </p>
+                            </div>
+
 
                         </div>
                     </div>
@@ -59,7 +64,9 @@
             </div>
         </div>
     </header>
+
     <main class="" style="margin-top:100px;">
+
         <!-- Why to use -->
         <section class="container mt-5" style="margin-bottom: 100px;">
             <div class="row d-flex align-items-center">
@@ -67,77 +74,72 @@
                     class="img-fluid col col-lg-6 d-flex justify-content-center d-lg-auto" alt="hand thumbs up">
 
                 <div class="col col-lg-5 text-start">
-                    <h3 class="fw-bold capitalize mb-4">Защо да се използва?</h3>
-                    <p>Нашият инструмент помага на мениджърите да следят работата на екипа, като възлагат задачи на
-                        служителите. Задачите могат
-                        лесно да се преглеждат и променят.
-                        Дизайнът е интуитивен, но същевременно мощен. Точно това, което може да ви е необходимо за
-                        вашата компания.</p>
-                    <div class="row mt-4">
+                    <h3 class="fw-bold capitalize mb-4">Защо да се използва Eye Track?</h3>
+                    <p class="text-smaller">Нашият инструмент подпомага мениджърите да следят работата на екипа си,
+                        възлагайки задачи на служителите. Задачите могат
+                        лесно да се преглеждат и променят. Дизайнът е интуитивен, но същевременно ефективен. Точно това,
+                        което може да е
+                        необходимо за вашата компания.</p>
+                    <div class="row mt-4 d-flex justify-content-evenly justify-content-sm-start">
                         <div class="col-3">
-                            <div class="rounded bg-green p-1" style="width: 50px; height: 50px;"><img width="100%"
-                                    src="imgs/tick.svg" alt="Ефективност"></div>
-
+                            <img src="imgs/tick.svg" alt="Ефективност" class=" rounded bg-green p-1 why-icon">
                             <p class="mt-2 text-sm">Ефективност</p>
                         </div>
                         <div class="col-3">
-                            <div class="rounded bg-green p-1" style="width: 50px; height: 50px;">
-                                <img width="100%" src="imgs/clock.svg" alt="Скорост">
-                            </div>
+                            <img src="imgs/clock.svg" alt="Скорост" class="rounded bg-green p-1 why-icon">
                             <p class="mt-2 text-sm">Скорост</p>
                         </div>
                         <div class="col-3">
-                            <div class="rounded bg-green p-1" style="width: 50px; height: 50px;">
-                                <img width="100%" src="imgs/smile.svg" alt="Лесност">
-                            </div>
-                            <p class="mt-2 text-sm">Лесност</p>
+                            <img src="imgs/smile.svg" alt="Лесност" class=" rounded bg-green p-1 why-icon">
+                            <p class="mt-2 text-sm">Достъпност</p>
                         </div>
                     </div>
                 </div>
             </div>
         </section>
+
         <!-- How to use -->
         <section class="container my-5" style="margin: 200px auto;">
-            <div class="col col-md-8 text-center mx-auto mb-5">
-                <h3 class="fw-bold capitalize mb-4">Как работи?</h3>
-                <p>Методологията Kanban е лесна за използване и може идеално да пасне на вашата компания. Разполагате с
+            <div class="col col-md-8  mx-auto mb-5">
+                <h3 class="fw-bold capitalize mb-4 text-sm-center">Как работи?</h3>
+                <p class="text-smaller">Методологията Kanban е лесна за използване и може идеално да пасне на вашата
+                    компания.
+                    Разполагате с
                     три етапа на
-                    работния процес: To-Do, в процес на изпълнение, свършена работа. Когато приключите с възложената ви
+                    работния процес:
+                    1) Задачи
+                    2) В процес
+                    3) Завършено.
+                    <br> Когато приключите с възложената ви
                     задача, просто я
-                    преместете в друг раздел.</p>
+                    преместете в друг раздел.
+                </p>
             </div>
-            <div class="my-5 pb-lg-5  row justify-content-center position-relative">
+            <div class="my-5 pb-lg-5  row justify-content-center position-relative to-dos">
+                <img src="imgs/sec-gray.png" class="col-3 img-fluid" alt="To-Do section">
+                <img src="imgs/sec-yellow.png" class="col-3 img-fluid" alt="In Process section">
+                <img src="imgs/sec-green.png" class="col-3 img-fluid" alt="Done section">
 
-                <img src="imgs/sec-gray.png" width="300px" class="col-3 img-fluid" alt="To-Do section">
-                <img src="imgs/sec-yellow.png" class="col-3 img-fluid" width="300px" alt="To-Do section">
-                <img src="imgs/sec-green.png" class="col-3 img-fluid" width="300px" alt="To-Do section">
-
-            </div>
-            <div class="my-5 border-bottom ">
             </div>
         </section>
+
+        <div class="my-5 border-bottom container"></div>
+
         <!-- Testemonials -->
-        <section class="container " style="margin-bottom: 150px;">
-            <h3 class="fw-bold capitalize mb-4 text-start">Какво мислят нашите клиенти</h3>
+        <section class="container mt-5 " style="margin-bottom: 150px;">
+            <h3 class="fw-bold capitalize mb-4 text-start">Отзиви</h3>
 
             <div class="row gap-4 px-2 justify-content-center justify-content-sm-start">
                 <div class="card shadow-sm border-0 col-12 col-md-5">
                     <div class="card-body py-4">
                         <h6 class="card-subtitle mb-3 text-body-secondary">Иван Иванов</h6>
-                        <h4 class="card-title mb-3 fw-bolder">Чудесен сервис</h5>
-                            <p class="card-text"></p>
-                            <div class="d-flex flex-row gap-2">
-                                <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                                </div>
-                                <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                                </div>
-                                <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                                </div>
-                                <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                                </div>
-                                <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                                </div>
-                            </div>
+                        <h4 class="card-title mb-3 fw-bolder">Страхотна услуга</h4>
+                        <p class="card-text"></p>
+                        <div class="d-flex flex-row gap-2">
+                            <img src="imgs/star.svg" class="star img-fluid" alt=""><img src="imgs/star.svg"
+                                class="star img-fluid" alt=""><img src="imgs/star.svg" class="star img-fluid"
+                                alt=""><img src="imgs/star.svg" class="star img-fluid" alt="">
+                        </div>
                     </div>
                 </div>
                 <div class="card shadow-sm border-0 col-12  col col-md-5">
@@ -147,26 +149,15 @@
                         <p class="card-text">
                             Лесен и бърз за използване.</p>
                         <div class="d-flex flex-row gap-2">
-                            <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                            </div>
-                            <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                            </div>
-                            <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                            </div>
-                            <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                            </div>
-                            <div class=""><img src="imgs/star.svg" class="img-fluid" width="30px" alt="">
-                            </div>
+                            <img src="imgs/star.svg" class="star img-fluid" alt="">
+                            <img src="imgs/star.svg" class="star img-fluid" alt="">
+                            <img src="imgs/star.svg" class="star img-fluid" alt="">
+                            <img src="imgs/star.svg" class="star img-fluid" alt="">
+                            <img src="imgs/star.svg" class="star img-fluid" alt="">
                         </div>
                     </div>
                 </div>
-
             </div>
-            <div></div>
-
-
-
-
         </section>
     </main>
 
@@ -187,14 +178,14 @@
                             <input type="text" class="form-control " id="user-name">
                         </div>
                         <div class="mb-3">
-                            <label for="message-text" class="col-form-label">Password:</label>
+                            <label for="user-password" class="col-form-label">Парола:</label>
                             <input type="password" class="form-control " id="user-password">
 
                         </div>
                     </form>
                 </div>
                 <div class="modal-footer">
-                    <a href="employee.html" type="button" class="btn bg-green text-white px-4">Логин</a>
+                    <a href="employee.html" class="btn bg-green text-white px-4">Логин</a>
                 </div>
             </div>
         </div>
@@ -206,32 +197,34 @@
             <img src="imgs/Logo-green.svg" alt="logo" class="mb-4" style="width: 150px;">
             <div class="w-50 mx-auto mb-4">
                 <p class="text-sm">
-                    Eye Track стартираща компания, която помага на екипа да работи ефективно, като използва метода
+                    Eye Track е стартираща компания, която помага на екипа да работи ефективно, като използва метода
                     kanban. Проследяването на
-                    задачите помага на всички служители и мениджъри да контролират работата си.
+                    задачите помага на всички служители и мениджъри да имат по-голям контрол върху работата си.
                 </p>
             </div>
             <ul class="w-75 mx-auto mb-4 navbar-nav  d-flex flex-lg-row justify-content-evenly">
-                <li class="nav-item "><img src="imgs/phone.svg" width="20" class="me-2">+00000000
+                <li class="nav-item "><img src="imgs/phone.svg" class="me-2 contacts" alt="phone">+00000000
                 </li>
-                <li class="nav-item "><img src="imgs/email.svg" width="20" class="me-2">email@mail.com
+                <li class="nav-item "><img src="imgs/email.svg" class="me-2 contacts" alt="email">email@mail.com
                 </li>
-                <li class="nav-item "><img src="imgs/address.svg" width="20" class="me-2">Варна, Младост, ж.к. Младост
+                <li class="nav-item "><img src="imgs/address.svg" class="me-2 contacts" alt="address">Варна, Младост,
+                    ж.к.
+                    Младост
                     бл. 144
                 </li>
             </ul>
             <ul class="w-50 mx-auto mb-2 navbar-nav  d-flex flex-row justify-content-center gap-3">
                 <li class="nav-item rounded-circle bg-yellow ">
-                    <a class="nav-link p-2" href="instagram.com"><img src="imgs/instagram-logo.svg"
-                            style="width: 25px; " alt="instagram"></a>
+                    <a class="nav-link p-2" href="instagram.com"><img src="imgs/instagram-logo.svg" alt=" instagram"
+                            class="socials"></a>
                 </li>
                 <li class="nav-item rounded-circle bg-yellow">
-                    <a class="nav-link p-2" href="facebook.com"><img src="imgs/facebook-logo.svg" style="width: 25px;"
-                            alt="facebook"></a>
+                    <a class="nav-link p-2" href="facebook.com"><img src="imgs/facebook-logo.svg" alt="facebook"
+                            class="socials"></a>
                 </li>
                 <li class="nav-item rounded-circle bg-yellow">
-                    <a class="nav-link p-2 " href="bluesky.com"><img src="imgs/Bluesky_Logo.svg" style="width: 25px;"
-                            alt="bluesky"></a>
+                    <a class="nav-link p-2 " href="bluesky.com"><img src="imgs/Bluesky_Logo.svg" alt="bluesky"
+                            class="socials"></a>
                 </li>
             </ul>
 
@@ -239,7 +232,8 @@
         <hr>
         <p>&copy; 2024 Eye Track | Проектът е създаден учебния цел</p>
     </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 </body>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
 
 </html>

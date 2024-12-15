@@ -1,7 +1,7 @@
 
 // Line Chart for Analytics
-const lineCtx = document.getElementById('lineChart').getContext('2d');
-const lineChart = new Chart(lineCtx, {
+let lineCtx = document.getElementById('lineChart').getContext('2d');
+let lineChart = new Chart(lineCtx, {
     type: 'line',
     data: {
         labels: ['Март', 'Април', 'Май', 'Юни', 'Юли'],
@@ -23,7 +23,7 @@ const lineChart = new Chart(lineCtx, {
 
 
 // Pie Chart for Analytics
-const data = {
+let data = {
     labels: ['Дизайн', 'Анализ', 'Разработка'],
     datasets: [{
         data: [30, 20, 50],
@@ -31,7 +31,7 @@ const data = {
         hoverBackgroundColor: ['#FF6384', '#36A2EB', '#FFCE56']
     }]
 };
-const config = {
+let config = {
     type: 'pie',
     data: data,
     options: {
@@ -43,8 +43,8 @@ const config = {
             tooltip: {
                 callbacks: {
                     label: function (tooltipItem) {
-                        const label = tooltipItem.label || '';
-                        const value = tooltipItem.raw;
+                        let label = tooltipItem.label || '';
+                        let value = tooltipItem.raw;
                         return `${label}: ${value}%`;
                     }
                 }
@@ -54,18 +54,22 @@ const config = {
 };
 
 // Render Pie Chart
-const pieCtx = document.getElementById('pieChart').getContext('2d');
-const pieChart = new Chart(pieCtx, config);
-
+let pieCtx = document.getElementById('pieChart').getContext('2d');
+let pieChart = new Chart(pieCtx, config);
 
 // Hide/show analytics
-const analytics = document.querySelector('.analytics-eye');
-const analyticsSection = document.querySelector('.analytics');
-const height = analyticsSection.scrollHeight;
+let analytics = document.querySelector('.analytics-eye');
+let eye = analytics.children[0];
+console.log(eye)
+let analyticsSection = document.querySelector('.analytics');
+let height = analyticsSection.scrollHeight;
 analytics.addEventListener('click', () => {
     if (analyticsSection.style.display === 'none') {
         analyticsSection.style.display = 'flex';
+        eye.src = "imgs/eye.svg";
+
     } else {
         analyticsSection.style.display = 'none';
+        eye.src = "imgs/closedeye.svg";
     }
 });

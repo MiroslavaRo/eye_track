@@ -56,3 +56,15 @@ const config = {
 // Render Pie Chart
 const pieCtx = document.getElementById('pieChart').getContext('2d');
 const pieChart = new Chart(pieCtx, config);
+
+// Hide/show analytics
+const analytics = document.querySelector('.analytics-eye');
+const analyticsSection = document.querySelector('.analytics');
+const height = analyticsSection.scrollHeight;
+analytics.addEventListener('click', () => {
+    if (analyticsSection.style.display === 'none') {
+        analyticsSection.style.display = 'flex';
+    } else {
+        analyticsSection.style.display = 'none';
+    }
+});

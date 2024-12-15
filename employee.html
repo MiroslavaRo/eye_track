@@ -78,45 +78,62 @@
 
                 <!-- Main -->
                 <div class="col-md-10 main-content">
-                    <div class="d-flex align-items-center mb-4 gap-3" style="margin-top:100px;">
-                        <div class="ratio ratio-1x1">
+
+                    <!-- User -->
+                    <section class="row mb-5 gap-3" style="margin-top:140px;">
+                        <div class="col ratio ratio-1x1">
                             <img src="imgs/photo-1573497019418-b400bb3ab074.avif"
-                            alt="Profile Picture" class="rounded-circle me-3 img-fluid">
+                            alt="Profile Picture" class="rounded-circle img-fluid">
                         </div>
-                        <div>
-                            <div class="d-flex align-items-center">
-                                <h4 class="mb-0">Петра Петкова<small class="text-muted">(Senior Manager)</small></h4>
-                                <p class="mb-0">petkova.p@mail.com</p>
+                        <div class="col">
+                            <div class="col gap-3 mb-5">
+                                <div class="d-flex align-items-baseline gap-3">
+                                    <h3><b>Петра Петкова</b></h3>
+                                    <h4><small class="text-muted">(Senior Manager)</small></h4>
+                                </div>
+                                <p class="text-muted">petkova.p@mail.com</p>
                             </div>
-                            <div class="d-flex align-items-center flex-row"></div>
-                                <div>
-                                    <img>
+                            <div class="d-flex gap-5">
+                                <a href="#" class="d-flex gap-3 flex-column align-items-center">
+                                    <img src="" alt="" width="70px" height="70px"
+                                    class="rounded rounded-3 bg-green">
                                     <span>Design</span>
-                                </div>
-                                <div>
-                                    <img>
+                                </a>
+                                <a href="#" class="d-flex gap-3 flex-column align-items-center">
+                                    <img src="" alt="" width="70px" height="70px"
+                                    class="rounded rounded-3 bg-green">
                                     <span>Analytics</span>
-                                </div>
-                                <div>
-                                    <img>
-                                    <span>Development</span>
-                                </div>
+                                </a>
+                                <a href="#" class="d-flex gap-3 flex-column align-items-center">
+                                    <img src="" alt="" width="70px" height="70px"
+                                    class="rounded rounded-3 bg-green">
+                                    <span>Develop...</span>
+                                </a>
                             </div>
                         </div>
-                    </div>
+                    </section>
 
                     <section class="row mb-4 my-5">
                         <div class="col-md-6">
-                            <h3 class="department-card"><a href="#"
-                                    class="d-flex link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2"><img
-                                        src="imgs/museum-dark.svg" width="30px" class="me-2" alt="department">Отдели</a>
+                            <h3 class="department-card d-flex align-items-baseline gap-2">
+                                <a href="#" class="d-flex link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2">
+                                    <img src="imgs/museum-dark.svg" width="30px" class="me-2" alt="department">
+                                    <span>Отдели</span>
+                                </a>
+                                <a href="#">
+                                    <img src="imgs/plus-dark.svg" width="30px" alt="">
+                                </a>
                             </h3>
                         </div>
                         <div class="col-md-6">
-                            <h3 class="department-card"><a href="#"
-                                    class="d-flex link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2">
-                                    <img src="imgs/users-dark.svg" class="me-2" width="25px"
-                                        alt="emplyees">Служители</a>
+                            <h3 class="department-card gap-2">
+                                <a href="#" class="d-flex link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2">
+                                    <img src="imgs/users-dark.svg" class="me-2" width="25px" alt="emplyees">
+                                    <span>Служители</span>
+                                </a>
+                                <a href="#">
+                                    <img src="imgs/plus-dark.svg" width="30px" alt="">
+                                </a>
                             </h3>
                         </div>
                     </section>
@@ -125,8 +142,8 @@
                         <h3><a href="#"
                                 class="link-dark link-underline-opacity-0 link-underline-opacity-100-hover link-offset-2">
                                 <img src="imgs/tick-black.svg" width="45px" alt="tasks"> Задачи</a></h3>
-                        <div class="row mb-4">
-                            <div class="col-md-4 bg-white rounded p-3 shadow-sm" style="height: 150px;">
+                        <div class="row mb-4 gap-3">
+                            <div class="col-md-4 bg-white rounded p-3 shadow-sm" style="height: 120px;">
                                 <div class="task-card">
                                     <h5 class=" fw-bold">Задача #3 (Подготовка на дизайна във Figma)
                                     </h5><small>Дизайн</small>
@@ -150,8 +167,13 @@
                     </section>
 
                     <section>
-                        <h3>Анализ</h3>
-                        <div class="row mb-4">
+                        <div class="d-flex justify-content-between mb-4">
+                            <h3>Анализ</h3>
+                            <div id="test" class="analytics-eye cursor-pointer">
+                                <img src="imgs/eye.svg" width="30px" alt="">
+                            </div>
+                        </div>
+                        <div class="row mb-4 analytics">
                             <div class="col-md-6">
                                 <div class="analytics-card w-50 rounded p-2 bg-white">
                                     <canvas id="pieChart"></canvas>
